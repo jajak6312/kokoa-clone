@@ -14,34 +14,53 @@ body {
   align-items: center;
 }
 .welcome-header__title {
-  font-size: 25px;
+  font-size: 30px;
+  font-weight: 600;
 }
 .welcome-header__text {
   margin-top: 30px;
   width: 60%;
   opacity: 0.5;
   font-weight: 600;
+  font-size: 20px;
 }
 
 #Login-form {
   display: flex;
   flex-direction: column;
-  margin: 0px 20px;
+  margin: 0px 30px;
 }
 
 #Login-form input {
-  padding: 20px 0px;
+  padding: 15px 0px;
   border: none;
   font-size: 20px;
-  border-bottom: 1px solid rgb(0, 0, 0, 0.2);
   margin-bottom: 25px;
-  transition: border-bottom 0.3s ease-in-out;
 }
 
 #Login-form input::placeholder {
   color: rgb(0, 0, 0, 0.3);
 }
 
+#Login-form input:not([type="submit"]) {
+  border-bottom: 1px solid rgb(0, 0, 0, 0.2);
+  transition: border-color 0.3s ease-in-out;
+}
+
+#Login-form input[type="submit"] {
+  cursor: pointer;
+  background-color: var(--yellow);
+  margin-top: 20px;
+  padding: 25px 0px;
+  border-radius: 5px;
+}
+
 #Login-form input:focus {
-  border-bottom: 1px solid var(--yellow);
+  border-color: var(--yellow);
+}
+
+#Login-form a {
+  text-align: center;
+  text-decoration: none;
+  color: inherit;
 }
