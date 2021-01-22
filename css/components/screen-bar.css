@@ -1,8 +1,9 @@
 .screen__header {
-  padding: var(--horizontal-space);
+  padding: 50px 20px 20px 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 15px;
 }
 
 .screen__title {
@@ -11,5 +12,5 @@
 }
 
 .screen__icons span {
-  margin-left: 25px;
+  margin-left: 15px;
 }
