@@ -14,3 +14,17 @@
 .screen__icons span {
   margin-left: 15px;
 }
+
+.screen__not {
+  position: relative;
+}
+
+.screen__dot {
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  background-color: tomato;
+  border-radius: 2.5px;
+  left: 77px;
+  bottom: 20px;
+}
