@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Chat - Kokoa talk</title>
   </head>
-  <body id="chat-screen__color">
+  <body id="chat-screen">
     <div class="status-bar">
       <div class="status-bar__column">
         <span>No Service</span>
@@ -35,7 +35,43 @@
       </div>
     </header>
 
-    <main class="main-screen"></main>
+    <main class="main-screen main-chat">
+      <div class="chat__timestamp">Tuesday, June 30, 2020</div>
+      <div class="message-row">
+        <img
+          src="data:image/jpeg;base64,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"
+        />
+        <div class="message-row__content">
+          <span class="message__author">Nicolas</span>
+          <div class="message__info">
+            <span class="message__bubble">Hi</span>
+            <span class="message__time">21:27</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="message-row message-row--own">
+        <div class="message-row__content">
+          <div class="message__info">
+            <span class="message__bubble">What's up?</span>
+            <span class="message__time">21:27</span>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <form class="reply">
+      <div class="reply__column">
+        <i class="far fa-plus-square fa-lg"></i>
+      </div>
+      <div class="reply__column">
+        <input type="text" placeholder="Write a message..." />
+        <i class="far fa-smile fa-lg"></i>
+        <button>
+          <i class="far fa-paper-plane"></i>
+        </button>
+      </div>
+    </form>
 
     <script
       src="https://kit.fontawesome.com/c7298b9d88.js"
